@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <title>Werkspot Hacker News</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://news.ycombinator.com/y18.gif"
+            width="30"
+            height="30"
+            alt=""
+            loading="lazy"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" onclick='setFilter("All")'
+                >All <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick='setFilter("job")'>job</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick='setFilter("story")'
+                >story</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick='setFilter("comment")'
+                >comment</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick='setFilter("poll")'>poll</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick='setFilter("pollopt")'
+                >pollopt</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container-fluid body-content">
+        <div class="row cards p-2 d-flex justify-content-center"></div>
+        <div class="row d-flex justify-content-center my-3">
+          <button type="button" id="more" class="btn btn-secondary">
+            More !!!
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
